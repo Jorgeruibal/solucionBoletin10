@@ -1,0 +1,17 @@
+C:\Users\Ramon RS\source\repos\Boletín AO\bin\Debug\Boletín AO.exe.config
+C:\Users\Ramon RS\source\repos\Boletín AO\bin\Debug\Boletín AO.exe
+C:\Users\Ramon RS\source\repos\Boletín AO\bin\Debug\Boletín AO.pdb
+C:\Users\Ramon RS\source\repos\Boletín AO\bin\Debug\Boletín AO.xml
+C:\Users\Ramon RS\source\repos\Boletín AO\obj\Debug\Boletín AO.vbprojAssemblyReference.cache
+C:\Users\Ramon RS\source\repos\Boletín AO\obj\Debug\Boletín_AO.Ejercicio1.resources
+C:\Users\Ramon RS\source\repos\Boletín AO\obj\Debug\Boletín_AO.Form1.resources
+C:\Users\Ramon RS\source\repos\Boletín AO\obj\Debug\Boletín_AO.Resources.resources
+C:\Users\Ramon RS\source\repos\Boletín AO\obj\Debug\Boletín AO.vbproj.GenerateResource.cache
+C:\Users\Ramon RS\source\repos\Boletín AO\obj\Debug\Boletín AO.vbproj.CoreCompileInputs.cache
+C:\Users\Ramon RS\source\repos\Boletín AO\obj\Debug\Boletín AO.exe
+C:\Users\Ramon RS\source\repos\Boletín AO\obj\Debug\Boletín AO.xml
+C:\Users\Ramon RS\source\repos\Boletín AO\obj\Debug\Boletín AO.pdb
+C:\Users\Ramon RS\source\repos\Boletín AO\obj\Debug\Boletín_AO.Ejercicio2.resources
+C:\Users\Ramon RS\source\repos\Boletín AO\obj\Debug\Boletín_AO.Ejercicio3.resources
+C:\Users\Ramon RS\source\repos\Boletín AO\obj\Debug\Boletín_AO.Ejercicio6.resources
+C:\Users\Ramon RS\source\repos\Boletín AO\obj\Debug\Boletín_AO.Proyecto.resources
