@@ -1,7 +1,6 @@
 ﻿Option Strict On
 Imports System.IO
 
-
 Public Class Proyecto
     Dim registros As List(Of String) = New List(Of String)()
     Dim rutaDirectory As String = Directory.GetCurrentDirectory()
@@ -10,15 +9,15 @@ Public Class Proyecto
     Private Sub btnGuardarUsuario_Click(sender As Object, e As EventArgs) Handles btnGuardarUsuario.Click
         Dim nombre, apellidos, email, dni As String
         Dim edad As Integer
-        Dim correcto As Boolean = True
+        Dim correctoNombre, correctoEdad, correctoDni, correctoApellidos, correctoEmail As Boolean
         'Validar cajas de texto
         If txtNombre.Text = "" Then
             txtNombre.Focus()
             txtNombre.BackColor = Color.Coral
-            correcto = False
+            correctoNombre = False
         Else
             nombre = txtNombre.Text
-            correcto = True
+            correctoNombre = True
             txtNombre.BackColor = Color.White
         End If
 
@@ -26,44 +25,58 @@ Public Class Proyecto
 
             txtApellidos.Focus()
             txtApellidos.BackColor = Color.Coral
-            correcto = False
+            correctoApellidos = False
         Else
+
             apellidos = txtApellidos.Text
-            correcto = True
+            correctoApellidos = True
             txtApellidos.BackColor = Color.White
         End If
 
         If txtEdad.Text = "" Then
             txtEdad.Focus()
             txtEdad.BackColor = Color.Coral
-            correcto = False
+            correctoEdad = False
         Else
+            'Validar que es mayor de edad
             edad = Convert.ToInt32(txtEdad.Text)
-            correcto = True
+            correctoEdad = True
             txtEdad.BackColor = Color.White
         End If
         If txtEmail.Text = "" Then
-            correcto = False
+            correctoEmail = False
             txtEmail.Focus()
             txtEmail.BackColor = Color.Coral
         Else
             email = txtEmail.Text
-            correcto = True
+            'Validar email
+
+            correctoEmail = True
             txtEmail.BackColor = Color.White
         End If
         If txtDni.Text = "" Then
-            correcto = False
+            correctoDni = False
             txtDni.Focus()
             txtDni.BackColor = Color.Coral
         Else
-            correcto = True
-            txtDni.BackColor = Color.White
             dni = txtDni.Text
+            'Validar DNI
+            If dni.Length <> 9 Then
+            Else
+
+            End If
+
+
+            'Búsqueda en la matriz
+
+            correctoDni = True
+            txtDni.BackColor = Color.White
+
         End If
 
         'Si las cajas de texto están bien
         'cubiertas , guardamos los datos en el fichero
-        If correcto = True Then
+        If correctoApellidos = True And correctoNombre = True And correctoEmail = True And correctoDni = True And correctoEdad = True Then
             Dim respuesta As DialogResult = MessageBox.Show("Quiere guardar estos datos ", "Cuidado", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation)
             If respuesta = DialogResult.Yes Then
                 Dim registro As String = nombre + "*" + apellidos + "*" +
@@ -86,7 +99,7 @@ Public Class Proyecto
             Dim reg As String = lector.ReadLine()
             registros.Add(reg)
         End While
-
+        lector.Close()
         'Mostrar en el visualizador el primer registro
 
         If registros.Count > 0 Then
